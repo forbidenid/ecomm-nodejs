@@ -18,6 +18,8 @@ const uploadRouter = require("./routes/uploadRoute");
 const cookieParser = require("cookie-parser");
 const morgan = require("morgan");
 const cors = require("cors");
+const readableStream = require('readable-stream');
+
 
 dbConnect();
 app.use(morgan("dev"));
